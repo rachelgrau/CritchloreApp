@@ -1,0 +1,2 @@
+PODS_FIREBASEANALYTICS_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/FirebaseAnalytics/Frameworks/frameworks"
+PODS_FIREBASEANALYTICS_OTHER_LDFLAGS = -l"c++" -l"sqlite3" -l"z" -framework "AdSupport" -framework "AddressBook" -framework "FirebaseAnalytics" -framework "SafariServices" -framework "StoreKit" -framework "SystemConfiguration"

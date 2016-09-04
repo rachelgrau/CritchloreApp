@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DBB6B3A5A63808AB9452BDE"
+               BlueprintIdentifier = "B4C446E2717DE9443E3CA903"
                BuildableName = "libPods-Critchlore-GoogleSymbolUtilities.a"
                BlueprintName = "Pods-Critchlore-GoogleSymbolUtilities"
                ReferencedContainer = "container:Pods.xcodeproj">

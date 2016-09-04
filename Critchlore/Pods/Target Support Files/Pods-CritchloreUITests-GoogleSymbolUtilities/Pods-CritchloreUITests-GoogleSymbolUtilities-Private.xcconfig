@@ -1,0 +1,6 @@
+#include "Pods-CritchloreUITests-GoogleSymbolUtilities.xcconfig"
+FRAMEWORK_SEARCH_PATHS = ${PODS_CRITCHLOREUITESTS_GOOGLESYMBOLUTILITIES_FRAMEWORK_SEARCH_PATHS}
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Build" "${PODS_ROOT}/Headers/Build/GoogleSymbolUtilities" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Firebase" "${PODS_ROOT}/Headers/Public/FirebaseAnalytics" "${PODS_ROOT}/Headers/Public/FirebaseInstanceID" "${PODS_ROOT}/Headers/Public/GoogleInterchangeUtilities" "${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities" "${PODS_ROOT}/Headers/Public/GoogleUtilities"
+OTHER_LDFLAGS = ${PODS_CRITCHLOREUITESTS_GOOGLESYMBOLUTILITIES_OTHER_LDFLAGS} -ObjC
+PODS_ROOT = ${SRCROOT}

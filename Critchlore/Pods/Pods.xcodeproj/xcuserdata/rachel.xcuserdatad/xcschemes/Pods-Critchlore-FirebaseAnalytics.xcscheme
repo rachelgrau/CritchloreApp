@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FC7B319B1EB61CA25487DF63"
+               BlueprintIdentifier = "C9C65AE262E77E87680EE9AA"
                BuildableName = "libPods-Critchlore-FirebaseAnalytics.a"
                BlueprintName = "Pods-Critchlore-FirebaseAnalytics"
                ReferencedContainer = "container:Pods.xcodeproj">

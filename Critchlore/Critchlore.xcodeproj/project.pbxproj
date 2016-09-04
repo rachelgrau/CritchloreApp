@@ -17,6 +17,60 @@
 			<key>isa</key>
 			<string>PBXBuildFile</string>
 		</dict>
+		<key>29130A978DD4E9F023D35146</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>2B31A6A5984E5324BA517A07</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CritchloreTests/Pods-CritchloreTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
 		<key>2CA2901702B6914B996D355C</key>
 		<dict>
 			<key>explicitFileType</key>
@@ -30,11 +84,28 @@
 			<key>sourceTree</key>
 			<string>BUILT_PRODUCTS_DIR</string>
 		</dict>
+		<key>2D45CBA0DB897C3B21BE7A14</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9CDA37AF3FF1DC50ECC871AD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3102DC057BD39B0F8DEF1198</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5000323C4EB9BF3779ACBD9D</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
 		<key>3B9D4A803D54C0511606F325</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>2CA2901702B6914B996D355C</string>
+				<string>96D6F426DB02FE3960C117DB</string>
+				<string>9CDA37AF3FF1DC50ECC871AD</string>
+				<string>5000323C4EB9BF3779ACBD9D</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
@@ -73,17 +144,166 @@ fi
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
 		</dict>
+		<key>5000323C4EB9BF3779ACBD9D</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>5F6E4496D5FC739DB27563B0</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-CritchloreUITests/Pods-CritchloreUITests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>76331DD400B794ECAFEBD222</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
 		<key>7EE7A2F22B057191A42AAA0F</key>
 		<dict>
 			<key>children</key>
 			<array>
 				<string>B438198C60DE1FC7DB5FE96D</string>
 				<string>F998EF4594B5E638D1BF838C</string>
+				<string>F142FE36DBE60A5FFCD409CA</string>
+				<string>913756012B44151211D8B82B</string>
+				<string>8916103BC72019EC41A57141</string>
+				<string>A8B8CDF4F972F9D0933F1DFF</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8916103BC72019EC41A57141</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CritchloreUITests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-CritchloreUITests/Pods-CritchloreUITests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>913756012B44151211D8B82B</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CritchloreTests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-CritchloreTests/Pods-CritchloreTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9663F792852F6C5B45CED73B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>96D6F426DB02FE3960C117DB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96D6F426DB02FE3960C117DB</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-CritchloreTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9CDA37AF3FF1DC50ECC871AD</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-CritchloreUITests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>A8B8CDF4F972F9D0933F1DFF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CritchloreUITests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-CritchloreUITests/Pods-CritchloreUITests.release.xcconfig</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -226,6 +446,7 @@ fi
 			<key>files</key>
 			<array>
 				<string>1F1A44713A3E244FB71CBC1E</string>
+				<string>3102DC057BD39B0F8DEF1198</string>
 			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
@@ -498,7 +719,9 @@ fi
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
-			<array/>
+			<array>
+				<string>9663F792852F6C5B45CED73B</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -523,9 +746,11 @@ fi
 			<string>CC18170C1D38145A0076CA00</string>
 			<key>buildPhases</key>
 			<array>
+				<string>76331DD400B794ECAFEBD222</string>
 				<string>CC1816F11D38145A0076CA00</string>
 				<string>CC1816F21D38145A0076CA00</string>
 				<string>CC1816F31D38145A0076CA00</string>
+				<string>2B31A6A5984E5324BA517A07</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -640,7 +865,9 @@ fi
 			<key>buildActionMask</key>
 			<string>2147483647</string>
 			<key>files</key>
-			<array/>
+			<array>
+				<string>2D45CBA0DB897C3B21BE7A14</string>
+			</array>
 			<key>isa</key>
 			<string>PBXFrameworksBuildPhase</string>
 			<key>runOnlyForDeploymentPostprocessing</key>
@@ -665,9 +892,11 @@ fi
 			<string>CC18170F1D38145A0076CA00</string>
 			<key>buildPhases</key>
 			<array>
+				<string>29130A978DD4E9F023D35146</string>
 				<string>CC1816FC1D38145A0076CA00</string>
 				<string>CC1816FD1D38145A0076CA00</string>
 				<string>CC1816FE1D38145A0076CA00</string>
+				<string>5F6E4496D5FC739DB27563B0</string>
 			</array>
 			<key>buildRules</key>
 			<array/>
@@ -993,6 +1222,8 @@ fi
 		</dict>
 		<key>CC18170D1D38145A0076CA00</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F142FE36DBE60A5FFCD409CA</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -1015,6 +1246,8 @@ fi
 		</dict>
 		<key>CC18170E1D38145A0076CA00</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>913756012B44151211D8B82B</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>BUNDLE_LOADER</key>
@@ -1051,6 +1284,8 @@ fi
 		</dict>
 		<key>CC1817101D38145A0076CA00</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>8916103BC72019EC41A57141</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>INFOPLIST_FILE</key>
@@ -1073,6 +1308,8 @@ fi
 		</dict>
 		<key>CC1817111D38145A0076CA00</key>
 		<dict>
+			<key>baseConfigurationReference</key>
+			<string>A8B8CDF4F972F9D0933F1DFF</string>
 			<key>buildSettings</key>
 			<dict>
 				<key>INFOPLIST_FILE</key>
@@ -1359,10 +1596,25 @@ fi
 			<key>shellPath</key>
 			<string>/bin/sh</string>
 			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Critchlore/Pods-Critchlore-resources.sh"
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
 </string>
 			<key>showEnvVarsInLog</key>
 			<string>0</string>
+		</dict>
+		<key>F142FE36DBE60A5FFCD409CA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-CritchloreTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-CritchloreTests/Pods-CritchloreTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
 		</dict>
 		<key>F998EF4594B5E638D1BF838C</key>
 		<dict>

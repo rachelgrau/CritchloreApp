@@ -1,0 +1,2 @@
+PODS_GOOGLEUTILITIES_FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/GoogleUtilities/Frameworks"
+PODS_GOOGLEUTILITIES_OTHER_LDFLAGS = -l"z" -framework "AddressBook" -framework "CoreGraphics" -framework "GoogleUtilities"

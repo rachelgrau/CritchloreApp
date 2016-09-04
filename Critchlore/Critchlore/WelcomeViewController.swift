@@ -12,6 +12,7 @@ Copyright © 2016 Rachel. All rights reserved.
 */
 
 import UIKit
+import FirebaseAnalytics
 
 class WelcomeViewController: UIViewController {
 
@@ -46,6 +47,25 @@ class WelcomeViewController: UIViewController {
             print("Attempting log in")
         } else {
             print("Attempting sign up")
+            /* First make sure password is at least 4 characters */
+            if password?.characters.count <= 4 {
+                print("Password too short.")
+                let alert = UIAlertController(title: "Password Too Short", message: "Please enter a password with more than 4 characters", preferredStyle: UIAlertControllerStyle.Alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(alert, animated: true, completion: nil)
+            } else {
+                print ("Password ok!")
+                //            let ref = Firebase(url: "https://CritchloreApp.firebaseio.com")
+                //            ref.createUser(email, password: password,
+                //                withValueCompletionBlock: { error, result in
+                //                    if error != nil {
+                //                        // There was an error creating the account
+                //                    } else {
+                //                        let uid = result["uid"] as? String
+                //                        println("Successfully created user account with uid: \(uid)")
+                //                    }
+                //            })
+            }
         }
     }
     
